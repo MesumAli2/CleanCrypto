@@ -69,7 +69,7 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
-
+    implementation ("com.google.accompanist:accompanist-flowlayout:0.17.0")
     // Coroutines
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
@@ -82,6 +82,8 @@ dependencies {
     implementation ("com.google.dagger:hilt-android:2.45")
     implementation("androidx.test.espresso:espresso-contrib:3.5.1")
     kapt ("com.google.dagger:hilt-android-compiler:2.46.1")
+    implementation ("androidx.navigation:navigation-compose:2.5.3")
+    implementation ("androidx.hilt:hilt-navigation-compose:1.0.0")
 
     // Retrofit
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
