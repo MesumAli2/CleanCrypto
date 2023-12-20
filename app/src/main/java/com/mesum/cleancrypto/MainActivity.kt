@@ -10,6 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.mesum.cleancrypto.ui.theme.CleanCryptoTheme
 
 import com.mesum.coindetail.CoinDetailScreen
 import com.mesum.coinlist.CoinListScreen

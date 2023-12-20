@@ -1,4 +1,4 @@
-package com.mesum.cleancrypto
+package com.mesum.cleancrypto.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
