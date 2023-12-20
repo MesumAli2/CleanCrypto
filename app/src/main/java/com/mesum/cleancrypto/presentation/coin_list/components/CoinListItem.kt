@@ -22,24 +22,34 @@ fun CoinListItem(
     coin: Coin,
     onItemClick :(Coin) -> Unit
 ){
-    Row (modifier = Modifier
+    item(onItemClick, coin)
+}
+
+@Composable
+private fun item(
+    onItemClick: (Coin) -> Unit,
+    coin: Coin
+) {
+    Row(modifier = Modifier
         .fillMaxWidth()
         .clickable { onItemClick(coin) }
         .padding(20.dp),
         horizontalArrangement = Arrangement.SpaceBetween
     )
-     {
-        Text(text = "${coin.rank}. ${coin.name} (${coin.symbol})"
-        , style = MaterialTheme.typography.bodyLarge,
+    {
+        Text(
+            text = "${coin.rank}. ${coin.name} (${coin.symbol})",
+            style = MaterialTheme.typography.bodyLarge,
             overflow = TextOverflow.Ellipsis
         )
-         Text(text = if (coin.isActive == true) "active" else "inactive",
-             color = if (coin.isActive == true) Color.Green else Color.Red,
-             fontStyle = FontStyle.Italic,
-             textAlign = TextAlign.End,
-             style =  MaterialTheme.typography.titleMedium,
-             modifier = Modifier.align(CenterVertically)
+        Text(
+            text = if (coin.isActive == true) "active" else "inactive",
+            color = if (coin.isActive == true) Color.Green else Color.Red,
+            fontStyle = FontStyle.Italic,
+            textAlign = TextAlign.End,
+            style = MaterialTheme.typography.titleMedium,
+            modifier = Modifier.align(CenterVertically)
 
-         )
+        )
     }
 }
