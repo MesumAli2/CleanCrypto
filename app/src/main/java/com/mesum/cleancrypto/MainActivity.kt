@@ -6,17 +6,13 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.mesum.cleancrypto.presentation.Screen
-import com.mesum.cleancrypto.presentation.coin_detail.CoinDetailScreen
-import com.mesum.cleancrypto.presentation.coin_list.CoinListScreen
-import com.mesum.cleancrypto.presentation.ui.theme.CleanCryptoTheme
+
+import com.mesum.coindetail.CoinDetailScreen
+import com.mesum.coinlist.CoinListScreen
 import dagger.hilt.android.AndroidEntryPoint
 
 

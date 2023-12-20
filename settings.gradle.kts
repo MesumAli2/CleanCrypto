@@ -15,3 +15,10 @@ dependencyResolutionManagement {
 
 rootProject.name = "CleanCrypto"
 include(":app")
+include(":coinList")
+include(":coinDetail")
+include(":data")
+include(":domain")
+include(":ui-common")
+include(":common")
+include(":di")
