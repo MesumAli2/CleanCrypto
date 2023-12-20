@@ -18,7 +18,6 @@
             <option value="$PROJECT_DIR$/data" />
             <option value="$PROJECT_DIR$/di" />
             <option value="$PROJECT_DIR$/domain" />
-            <option value="$PROJECT_DIR$/ui-common" />
           </set>
         </option>
       </GradleProjectSettings>
