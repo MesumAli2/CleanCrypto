@@ -41,6 +41,7 @@ android {
     buildFeatures {
         // Enable Jetpack Compose
         compose  = true
+        viewBinding = true
     }
 }
 
@@ -87,6 +88,10 @@ dependencies {
 // Hilt for Dependency Injection
     implementation("com.google.dagger:hilt-android:2.45")
     kapt("com.google.dagger:hilt-android-compiler:2.46.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1")
+    implementation("androidx.navigation:navigation-fragment:2.6.0")
+
+
 
 // Navigation
     implementation("androidx.navigation:navigation-compose:2.5.3")
